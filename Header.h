@@ -40,7 +40,8 @@ typedef struct Node {
  * @var ED::linhas
  * Número de linhas na matriz.
  * @var ED::colunas
- * Número de colunas na matriz.
+ * Número de colunas na matriz.    
+ * 
  */
 typedef struct {
     Node* head;

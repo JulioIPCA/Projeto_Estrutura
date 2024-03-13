@@ -25,6 +25,8 @@ int main() {
 
     int posicao;
 
+    int linha, coluna, novoValor;
+
     lerMatriz("matriz.txt", &ed);
 
     scanf_s("%d", &n);
@@ -48,9 +50,7 @@ int main() {
 
         printf("\nDigite a linha, a coluna e o novo valor (separados por espaço): ");
         scanf_s("%d %d %d", &linha, &coluna, &novoValor);
-        linha_n = linha - 1; // primeira linha e coluna matriz (0,0)
-        coluna_n = coluna - 1;
-        modificarValor(&ed, linha_n, coluna_n, novoValor);
+        modificarValor(&ed, linha, coluna, novoValor); 
 
         // Exibir a matriz atualizada
         printf("\nMatriz apos a modificacao:\n");
