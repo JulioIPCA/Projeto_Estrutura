@@ -1,18 +1,14 @@
 /*****************************************************************//**
  * \file   Header.h
- * \brief  
+ * \brief  Ficheiro de cabeçalho do programa - Contém as estruturas usadas no programa
  * 
  * 
  * \author Júlio Faria
  * \date   March 2024
  *********************************************************************/
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
-
 
 /**
  * @struct Node
