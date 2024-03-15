@@ -10,111 +10,158 @@
 #include <stdlib.h>
 #include "Header.h"
 
+
+ /**
+ * declaração de variáveis
+ */
+
+ED ed;
+int n = 1;
+
+int posicao;
+
+int linha, coluna, novoValor, armaz, result;
+
 /**
  * \brief Função principal do programa
- * \return 0 se o programa terminar com sucesso
+ * 
  */
 int main() {
 
-    /**
-    * .declaração de variáveis
-    *
-    * \return
-    */
-
-    ED ed;
-    int n = 1;
-
-    int posicao;
-
-    int linha, coluna, novoValor;
-
-    /**
-	 * \brief Chama a função lerMatriz
-	 * 
-	 */
     lerMatriz("matriz.txt", &ed);
-
+    
     /**
-	 * \brief leitura de um valor inteiro de 1 a 7 para escolher a opção
+	 * leitura de um valor inteiro de 1 a 7 para escolher a opção
 	 */
     scanf_s("%d", &n);
 
     switch (n) {
 
     case 1:
+
         /**
-         * \brief Chama a funçãoimprimirMatriz
+         * Chama a funçãoimprimirMatriz
          */
-        imprimirMatriz(&ed);    
+
+        imprimirMatriz(&ed);
+
         break;
 
     case 2:
         imprimirMatriz(&ed);
         /**
-         * \brief Chama a função modificarValor
+         * Chama a função modificarValor
          */
-        printf("\nDigite a linha, a coluna e o novo valor (separados por espaço): ");
+        printf("\nDigite a linha, a coluna e o novo valor (separados por espaco): ");
         scanf_s("%d %d %d", &linha, &coluna, &novoValor);
-        modificarValor(&ed, linha, coluna, novoValor); 
-        printf("\nMatriz após a modificação:\n");
-        imprimirMatriz(&ed);
-        atualizarArquivo("matriz.txt", &ed);
+        modificarValor(&ed, linha, coluna, novoValor);
+        result = modificarValor(&ed, linha, coluna, novoValor);
+        if (result == 201) {
+            printf("Erro na funcao");
+        }
+        else {
+            printf("\nMatriz apos a modificacao:\n");
+            imprimirMatriz(&ed);
+            atualizarArquivo("matriz.txt", &ed);
+        }
+
 
         break;
 
     case 3:
+
         /**
-         * \brief Chama a função adicionarLinha
+         * Chama a função adicionarLinha
          */
-        printf("Número da posição onde quer adicionar a linha: ");
+        imprimirMatriz(&ed);
+        printf("Numero da posicao onde quer adicionar a linha: ");
         scanf_s("%d", &posicao);
         adicionarLinha(&ed, posicao);
-        imprimirMatriz(&ed);
-        atualizarArquivo("matriz.txt", &ed);
+        result = adicionarLinha(&ed, posicao);
+        if (result == 401) {
+            printf("Erro na funcao");
+        }
+        else {
+            imprimirMatriz(&ed);
+            atualizarArquivo("matriz.txt", &ed);
+        }
         break;
 
     case 4:
+
         /**
-        * \brief Chama a função adicionarColuna
+        * Chama a função adicionarColuna
         */
-        printf("Número da posição onde quer adicionar a Coluna: ");
+        printf("Numero da posicao onde quer adicionar a Coluna: ");
         scanf_s("%d", &posicao);
         adicionarColuna(&ed, posicao);
-        imprimirMatriz(&ed);
-        atualizarArquivo("matriz.txt", &ed);
+        result = adicionarColuna(&ed, posicao);
+        if (result == 501) {
+            printf("Erro na funcao");
+        }
+        else {
+            imprimirMatriz(&ed);
+            atualizarArquivo("matriz.txt", &ed);
+        }
         break;
 
     case 5:
+
         /**
-        * \brief Chama a função EliminarLinha
+        * Chama a função EliminarLinha
         */
         imprimirMatriz(&ed);
-        printf("Número da posição onde quer eliminar a linha: ");
+        printf("Numero da posicao onde quer eliminar a linha: ");
         scanf_s("%d", &posicao);
         eliminarLinha(&ed, posicao);
-        imprimirMatriz(&ed);
-        atualizarArquivo("matriz.txt", &ed);
+        result = eliminarLinha(&ed, posicao);
+        if (result == 601) {
+            printf("Erro na funcao");
+        }
+        else {
+            imprimirMatriz(&ed);
+            atualizarArquivo("matriz.txt", &ed);
+        }
         break;
 
     case 6:
+
         /**
-        * \brief Chama a função EliminarColuna
+        * Chama a função EliminarColuna
         */
         imprimirMatriz(&ed);
-        printf("Número da posição onde quer eliminar a Coluna: ");
+        printf("Numero da posição onde quer eliminar a Coluna: ");
         scanf_s("%d", &posicao);
-        eliminarColuna(&ed, posicao);
-        imprimirMatriz(&ed);
-        atualizarArquivo("matriz.txt", &ed);
+        result = eliminarColuna(&ed, posicao); // Chama a função e armazena o resultado
+        if (result == 701) {
+            printf("Erro na funcao");
+        }
+        else {
+            imprimirMatriz(&ed);
+            atualizarArquivo("matriz.txt", &ed);
+        }
         break;
 
     case 7:
+
+
         /**
-        * \brief Chama a função calcularSomaMaxima
+        * Chama a função calcularSomaMaxima
         */
         imprimirMatriz(&ed);
-        printf("A soma máxima da matriz e: %d", calcularSomaMaxima(&ed));
+        result = calcularSomaMaxima(&ed);
+        if (result == 801) {
+            printf("Erro na funcao");
+        }
+        else {
+            int somaMaxima = result; // Armazena o resultado da função
+            printf("A soma maxima da matriz e: %d", somaMaxima); // Usa a variável para a impressão
+        }
+        break;
     }
+    /**
+    * 
+    * \return 0 se o programa terminar com sucesso
+    */
     return 0;
 }
