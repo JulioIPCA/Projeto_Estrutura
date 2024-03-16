@@ -1,0 +1,253 @@
+\doxysection{C\+:/\+Users/\+Júlio Faria/\+Desktop/\+Ficheiros\+\_\+gerar\+\_\+\+Doxygen/\+Source.c File Reference}
+\hypertarget{_source_8c}{}\label{_source_8c}\index{C:/Users/Júlio Faria/Desktop/Ficheiros\_gerar\_Doxygen/Source.c@{C:/Users/Júlio Faria/Desktop/Ficheiros\_gerar\_Doxygen/Source.c}}
+
+
+Ficheiro com as funções do programa.  
+
+
+{\ttfamily \#include "{}Header.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_source_8c_adc1856ed579dc51719bb36cddb08d4ad}{inicializar}} (\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}})
+\begin{DoxyCompactList}\small\item\em Inicializa a estrutura de dados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8c_ad7d194e5525cfd33cbb7d88867e0c55a}{adicionar}} (\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}}, int armaz)
+\begin{DoxyCompactList}\small\item\em Adiciona um elemento na estrutura de dados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8c_a703018579e5315764a0155110666f893}{ler\+Matriz}} (char \texorpdfstring{$\ast$}{*}filename, \mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}})
+\begin{DoxyCompactList}\small\item\em Lê a matriz do arquivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8c_a36bc41a0bdb93781352b13c8bd43185e}{imprimir\+Matriz}} (\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}})
+\begin{DoxyCompactList}\small\item\em Imprime a matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8c_aa5a6c84cf6ccffb908d5986387b1c765}{modificar\+Valor}} (\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}}, int linha, int coluna, int novo\+Valor)
+\begin{DoxyCompactList}\small\item\em Modifica o valor de um elemento na matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8c_aee59f9e5606bcec9fa82c459f0d12e45}{atualizar\+Arquivo}} (char \texorpdfstring{$\ast$}{*}filename, \mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}})
+\begin{DoxyCompactList}\small\item\em Atualiza o arquivo com a matriz modificada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8c_a94329e35e58d2708060157fdd2bd735d}{adicionar\+Linha}} (\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}}, int posicao)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova linha à matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8c_ac1dc15feff6c7baf783694751f37b993}{adicionar\+Coluna}} (\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}}, int posicao)
+\begin{DoxyCompactList}\small\item\em Adiciona uma nova coluna à matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8c_a41d0f3ed4352cdb55c117619e2a4db53}{eliminar\+Linha}} (\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}}, int posicao)
+\begin{DoxyCompactList}\small\item\em Elimina uma linha da matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8c_a54a817c8285c0483ab7409372df0cb22}{eliminar\+Coluna}} (\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}}, int posicao)
+\begin{DoxyCompactList}\small\item\em Elimina uma coluna da matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_source_8c_a8b1caa062f9ca75f4eb6368a7cad35a6}{imprimir\+Conteudo\+Colunas}} (\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}})
+\begin{DoxyCompactList}\small\item\em Imprime o conteúdo das colunas da matriz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_source_8c_a6dd15c26a453885eabe8cb8b25c8f672}{calcular\+Soma\+Maxima}} (\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{main_8c_ab217625dc2d93bc33f129aef6a3950c0}{ed}})
+\begin{DoxyCompactList}\small\item\em Calcula a soma máxima possível dos inteiros selecionados na matriz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro com as funções do programa. 
+
+\begin{DoxyAuthor}{Author}
+Júlio Faria 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_source_8c_ad7d194e5525cfd33cbb7d88867e0c55a}\label{_source_8c_ad7d194e5525cfd33cbb7d88867e0c55a} 
+\index{Source.c@{Source.c}!adicionar@{adicionar}}
+\index{adicionar@{adicionar}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{adicionar()}{adicionar()}}
+{\footnotesize\ttfamily void adicionar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed,  }\item[{int}]{armaz }\end{DoxyParamCaption})}
+
+
+
+Adiciona um elemento na estrutura de dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & Ponteiro para a estrutura de dados. \\
+\hline
+{\em armaz} & Valor a ser armazenado na casa.\\
+\hline
+\end{DoxyParams}
+Esta função aloca memória para uma nova casa, define o valor armaz e o ponteiro para a próxima casa como NULL. Em seguida, verifica se a lista está vazia e adiciona uma nova casa ao final da lista. \Hypertarget{_source_8c_ac1dc15feff6c7baf783694751f37b993}\label{_source_8c_ac1dc15feff6c7baf783694751f37b993} 
+\index{Source.c@{Source.c}!adicionarColuna@{adicionarColuna}}
+\index{adicionarColuna@{adicionarColuna}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{adicionarColuna()}{adicionarColuna()}}
+{\footnotesize\ttfamily void adicionar\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed,  }\item[{int}]{posicao }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma nova coluna à matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & Ponteiro para a estrutura de dados. \\
+\hline
+{\em posicao} & Posição da nova coluna a ser adicionada.\\
+\hline
+\end{DoxyParams}
+Esta função adiciona uma nova coluna à matriz representada pela estrutura de dados. Ela verifica se a posição é válida e, em seguida, calcula o índice do primeiro elemento da nova coluna. Em seguida, percorre a lista ligada até à posição desejada e adiciona as novas casas na posição correta. Cada nova casa tem o valor inicializado como 0. O número de colunas é incrementado após a adição da nova coluna. \Hypertarget{_source_8c_a94329e35e58d2708060157fdd2bd735d}\label{_source_8c_a94329e35e58d2708060157fdd2bd735d} 
+\index{Source.c@{Source.c}!adicionarLinha@{adicionarLinha}}
+\index{adicionarLinha@{adicionarLinha}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{adicionarLinha()}{adicionarLinha()}}
+{\footnotesize\ttfamily void adicionar\+Linha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed,  }\item[{int}]{posicao }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma nova linha à matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & Ponteiro para a estrutura de dados. \\
+\hline
+{\em posicao} & Posição da nova linha a ser adicionada.\\
+\hline
+\end{DoxyParams}
+Esta função adiciona uma nova linha à matriz representada pela estrutura de dados. Verifica se a posição é válida e, em seguida, calcula o índice do primeiro elemento da nova linha. Em seguida, percorre a lista ligada até à posição desejada e adiciona as novas casas na posição correta. Cada nova casa tem o valor inicializado como 0. O número de linhas é incrementado após a adição da nova linha. \Hypertarget{_source_8c_aee59f9e5606bcec9fa82c459f0d12e45}\label{_source_8c_aee59f9e5606bcec9fa82c459f0d12e45} 
+\index{Source.c@{Source.c}!atualizarArquivo@{atualizarArquivo}}
+\index{atualizarArquivo@{atualizarArquivo}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{atualizarArquivo()}{atualizarArquivo()}}
+{\footnotesize\ttfamily void atualizar\+Arquivo (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{filename,  }\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed }\end{DoxyParamCaption})}
+
+
+
+Atualiza o arquivo com a matriz modificada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nome do arquivo. \\
+\hline
+{\em ed} & Ponteiro para a estrutura de dados.\\
+\hline
+\end{DoxyParams}
+Esta função abre o arquivo no modo escrita e atualiza o conteúdo do arquivo com a matriz modificada representada pela estrutura de dados. A função percorre a lista ligada e escreve os valores das respetivas casas no arquivo, formatando a saída para que a matriz seja armazenada corretamente. Cada valor é separado por ponto e vírgula e cada linha é finalizada com um paragrafo. \Hypertarget{_source_8c_a6dd15c26a453885eabe8cb8b25c8f672}\label{_source_8c_a6dd15c26a453885eabe8cb8b25c8f672} 
+\index{Source.c@{Source.c}!calcularSomaMaxima@{calcularSomaMaxima}}
+\index{calcularSomaMaxima@{calcularSomaMaxima}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{calcularSomaMaxima()}{calcularSomaMaxima()}}
+{\footnotesize\ttfamily int calcular\+Soma\+Maxima (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed }\end{DoxyParamCaption})}
+
+
+
+Calcula a soma máxima possível dos inteiros selecionados na matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & Ponteiro para a estrutura de dados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A soma máxima possível dos inteiros selecionados.
+\end{DoxyReturn}
+Esta função calcula a soma máxima possível dos inteiros selecionados na matriz representada pela estrutura de dados. Ela converte a lista encadeada em uma matriz bidimensional e encontra o valor máximo na matriz. Em seguida, converte a matriz em uma matriz de custo, onde cada valor é a diferença entre o valor máximo e o valor original. A função utiliza o algoritmo de atribuiçao de custo mínimo(algoritmo Hungaro) para encontrar a combinação de inteiros que maximiza a soma. Por fim, retorna a soma máxima possível dos inteiros selecionados. \Hypertarget{_source_8c_a54a817c8285c0483ab7409372df0cb22}\label{_source_8c_a54a817c8285c0483ab7409372df0cb22} 
+\index{Source.c@{Source.c}!eliminarColuna@{eliminarColuna}}
+\index{eliminarColuna@{eliminarColuna}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{eliminarColuna()}{eliminarColuna()}}
+{\footnotesize\ttfamily void eliminar\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed,  }\item[{int}]{posicao }\end{DoxyParamCaption})}
+
+
+
+Elimina uma coluna da matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & Ponteiro para a estrutura de dados. \\
+\hline
+{\em posicao} & Posição da coluna a ser eliminada.\\
+\hline
+\end{DoxyParams}
+Esta função elimina uma coluna da matriz representada pela estrutura de dados. Ela verifica se a posição é válida e, em seguida, calcula o índice do primeiro elemento da coluna a ser eliminada. Em seguida, percorre a lista encadeada até a posição desejada e remove os nós da coluna. O número de colunas é decrementado após a remoção da coluna. \Hypertarget{_source_8c_a41d0f3ed4352cdb55c117619e2a4db53}\label{_source_8c_a41d0f3ed4352cdb55c117619e2a4db53} 
+\index{Source.c@{Source.c}!eliminarLinha@{eliminarLinha}}
+\index{eliminarLinha@{eliminarLinha}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{eliminarLinha()}{eliminarLinha()}}
+{\footnotesize\ttfamily void eliminar\+Linha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed,  }\item[{int}]{posicao }\end{DoxyParamCaption})}
+
+
+
+Elimina uma linha da matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & Ponteiro para a estrutura de dados. \\
+\hline
+{\em posicao} & Posição da linha a ser eliminada.\\
+\hline
+\end{DoxyParams}
+Esta função elimina uma linha da matriz representada pela estrutura de dados. Verifica se a posição é válida e, em seguida, calcula o índice do primeiro elemento da linha a ser eliminada. Em seguida, percorre a lista ligada até à posição desejada e remove as casas da respetiva linha. O número de linhas é decrementado apó a remoção da linha. \Hypertarget{_source_8c_a8b1caa062f9ca75f4eb6368a7cad35a6}\label{_source_8c_a8b1caa062f9ca75f4eb6368a7cad35a6} 
+\index{Source.c@{Source.c}!imprimirConteudoColunas@{imprimirConteudoColunas}}
+\index{imprimirConteudoColunas@{imprimirConteudoColunas}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{imprimirConteudoColunas()}{imprimirConteudoColunas()}}
+{\footnotesize\ttfamily void imprimir\+Conteudo\+Colunas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed }\end{DoxyParamCaption})}
+
+
+
+Imprime o conteúdo das colunas da matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & Ponteiro para a estrutura de dados.\\
+\hline
+\end{DoxyParams}
+Esta função que percorre a lista ligada e imprime os valores das casas, formatando a saída para que os valores das colunas sejam exibidos corretamente. \Hypertarget{_source_8c_a36bc41a0bdb93781352b13c8bd43185e}\label{_source_8c_a36bc41a0bdb93781352b13c8bd43185e} 
+\index{Source.c@{Source.c}!imprimirMatriz@{imprimirMatriz}}
+\index{imprimirMatriz@{imprimirMatriz}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{imprimirMatriz()}{imprimirMatriz()}}
+{\footnotesize\ttfamily void imprimir\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed }\end{DoxyParamCaption})}
+
+
+
+Imprime a matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & Ponteiro para a estrutura de dados.\\
+\hline
+\end{DoxyParams}
+Esta função percorre a lista ligada e imprime os valores das casas, formatando a saída para que a matriz seja exibida corretamente. \Hypertarget{_source_8c_adc1856ed579dc51719bb36cddb08d4ad}\label{_source_8c_adc1856ed579dc51719bb36cddb08d4ad} 
+\index{Source.c@{Source.c}!inicializar@{inicializar}}
+\index{inicializar@{inicializar}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{inicializar()}{inicializar()}}
+{\footnotesize\ttfamily void inicializar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed }\end{DoxyParamCaption})}
+
+
+
+Inicializa a estrutura de dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & Ponteiro para a estrutura de dados.\\
+\hline
+\end{DoxyParams}
+Esta função inicializa a estrutura de dados, definindo o ponteiro para a primeira casa como NULL e o número de linhas e colunas como 0. \Hypertarget{_source_8c_a703018579e5315764a0155110666f893}\label{_source_8c_a703018579e5315764a0155110666f893} 
+\index{Source.c@{Source.c}!lerMatriz@{lerMatriz}}
+\index{lerMatriz@{lerMatriz}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{lerMatriz()}{lerMatriz()}}
+{\footnotesize\ttfamily void ler\+Matriz (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{filename,  }\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed }\end{DoxyParamCaption})}
+
+
+
+Lê a matriz do arquivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nome do arquivo. \\
+\hline
+{\em ed} & Ponteiro para a estrutura de dados.\\
+\hline
+\end{DoxyParams}
+Esta função abre o arquivo no modo leitura e lê os valores inteiros, adicionando-\/os na estrutura de dados. A função também verifica se o número de colunas é consistente em todas as linhas. \Hypertarget{_source_8c_aa5a6c84cf6ccffb908d5986387b1c765}\label{_source_8c_aa5a6c84cf6ccffb908d5986387b1c765} 
+\index{Source.c@{Source.c}!modificarValor@{modificarValor}}
+\index{modificarValor@{modificarValor}!Source.c@{Source.c}}
+\doxysubsubsection{\texorpdfstring{modificarValor()}{modificarValor()}}
+{\footnotesize\ttfamily void modificar\+Valor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_d}{ED}} \texorpdfstring{$\ast$}{*}}]{ed,  }\item[{int}]{linha,  }\item[{int}]{coluna,  }\item[{int}]{novo\+Valor }\end{DoxyParamCaption})}
+
+
+
+Modifica o valor de um elemento na matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & Ponteiro para a estrutura de dados. \\
+\hline
+{\em linha} & índice da linha do elemento a ser modificado. \\
+\hline
+{\em coluna} & índice da coluna do elemento a ser modificado. \\
+\hline
+{\em novo\+Valor} & Novo valor a ser atribuído ao elemento.\\
+\hline
+\end{DoxyParams}
+Esta funçãoo modifica o valor de um elemento na matriz representada pela estrutura de dados. Verifica se os índices de linha e coluna são válidos e, em seguida, percorre a lista ligada até encontrar o elemento desejado. Se o elemento for encontrado, o valor é atualizado com o novo\+Valor. Caso contrário, uma mensagem de erro é exibida. 
